@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sky Cast - Pocket Forecast for Every Step</title>
+    </head>
+
+    <body>
+        <!-- Header dari Page Home -->
+        <header>
+            <!--Logo Web-->
+            <img src="asset/logo.png" alt="Skycast Logo" width="200" height="auto">
+            <!--List Navigasi-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#article">Article</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!--Section Banner Home Pages-->
+            <section id="banner-home">
+                    <h1>Sky Cast</h1>
+                    <p>Sky Cast adalah aplikasi yang dapat membantu kamu untuk memperkirakan cuaca untuk seminggu ke depan!</p>
+            </section>
+
+            <!--Section Form Input-->
+            <section id="form-section">
+                <h2>Search Location!</h2>
+                <form class="form" id="form" action="/submit" method="POST">
+                    <label for="region">Region: </label>
+                    <input type="text" id="region" name="region">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!--Section News-->
+            <section id="news-article">
+                <h2>Weather Breaking News</h2>
+                <article>
+                    <!--List Article-->
+                    <ul>
+                        <li>
+                            <h3>Bandung Weather</h3>
+                            <p>Cuaca di Bandung Sangat Terik</p>
+                            <a href="https://google.com" class="button">Read More</a>
+                        </li>
+                        <li>
+                            <h3>Bekasi Weather</h3>
+                            <p>Cuaca di Bekasi Sangat Terik</p>
+                            <a href="https://google.com" class="button">Read More</a>
+                        </li>
+                        <li>
+                            <h3>Jakarta Weather</h3>
+                            <p>Cuaca di Jakarta Sangat Terik</p>
+                            <a href="https://google.com" class="button">Read More</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="form-suggestion">
+                <h2>Suggestion</h2>
+                <div>
+                    <form class="form" id="form" action="/submit" method="POST">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="gender" id="gender" name="gender">Gender: </label>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female<br>
+
+
+                        <label for="suggestion" id="suggestion" name="suggestion">Suggestion: </label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br>
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!--Footer dari Page Home-->
+        <footer>
+            <!--Informasi Web-->
+            <p>Sky Cast</p>
+            <p>&copy; Ghirah Madani</p>
+        </footer>
+    </body>
+</html>
