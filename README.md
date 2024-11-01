@@ -4,6 +4,8 @@
 
 Sky Cast adalah aplikasi web yang menyediakan cara yang mudah bagi pengguna untuk mendapatkan perkiraan cuaca untuk minggu yang akan datang. Aplikasi ini mencakup tautan navigasi, pembaruan berita cuaca, dan formulir umpan balik untuk saran pengguna.
 
+Sky Cast dapat diakses melalui 
+
 ## HTML Tags yang Digunakan
 
 Berikut adalah daftar tag HTML yang digunakan dalam kode ini beserta fungsinya:

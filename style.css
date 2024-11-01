@@ -1,0 +1,512 @@
+@import url('style/font.css');
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 120px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.header-container {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 20px;
+    padding: 10px 50px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-container img{
+    max-width: 200px;
+    max-height: fit-content;
+    transition: transform 0.2s ease;
+}
+
+header .header-container img:hover{
+    transform: scale(1.1);
+}
+
+
+nav {
+    padding: 0px;
+}
+
+nav ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+}
+
+main {
+    margin: 0;
+}
+
+.banner-image {
+    height: 60vh;
+    background-color: #FFF;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin-bottom: 20vh;
+}
+
+.banner-form {
+    width: 80%;
+}
+
+.banner-form .form {
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.banner-image .banner-form .form input[type="text"] {
+    width: 80%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: border-color 0.3s;
+}
+
+.banner-image .banner-form  input[type="text"]:focus {
+    outline: none;
+    border-color: #FFD700;
+}
+
+.banner-image .banner-form  input[type="text"]:hover {
+    outline: none;
+    border-color: #FFD700;
+}
+
+.banner-image .banner-form button {
+    width: 20%;
+    margin-left: 10px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-image .banner-form button:hover {
+    color: #FFD700;
+    background-color: #FFF;
+    border: 1px solid #FFD700;
+}
+ 
+/*=====================*/
+/*   SECTION ARTICLE   */
+/*=====================*/
+
+.news-article {
+    height: 80hv;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card li:hover {
+    transform: translateY(-5px);
+    z-index: 1;
+}
+
+.card li h3 {
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.card li p {
+    font-size: 1rem;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #FFD700;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    color: #FFD700;
+    background-color: #FFF;
+    border: 1px solid #FFD700;
+}
+
+/*====================*/
+/* SECTION SUGGESTION */
+/*====================*/
+
+.suggestion {
+    margin: 0;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.suggestion-image {
+    width: 480px;
+    height: auto;
+}
+
+.suggestion-image img {
+    width: 100%;
+    height: auto;
+}
+
+.suggestion-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.suggestion-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.suggestion-form {
+    width: 100%;
+}
+  
+.suggestion-form label {
+    display: block;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.suggestion-form input[type="text"],
+.suggestion-form textarea {
+    width: 100%;
+    padding: 10px 5px 10px;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.suggestion-form input[type="text"]:focus,
+.suggestion-form textarea:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.suggestion-form input[type="text"]:hover,
+.suggestion-form textarea:hover {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.suggestion-form input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.suggestion-form label[for="gender"] {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.suggestion-form textarea {
+    resize: vertical;
+}
+  
+.suggestion-form input[type="submit"] {
+    width: 20%;
+    padding: 10px 5px 10px;
+    background-color: #FFD700;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggestion-form input[type="submit"]:hover {
+    color: #FFD700;
+    background-color: #FFF;
+    border: 1px solid #FFD700;
+}
+
+
+footer {
+    background-color: #FFD700;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px; 
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        width: 80%;
+    }
+    .suggestion {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .card li h3 {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 5px;
+    }
+    
+    .card li p {
+        font-size: 12px;
+        color: black;
+        padding-bottom: 8px;
+    }
+    .banner-image {
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .banner-form {
+        width: 90%;
+    }
+    .banner-form .form input[type="text"],
+    .banner-form button {
+        font-size: 0.9rem;
+        width: 50%;
+    }
+    .button {
+        font-size: 0.9rem;
+    }
+
+    .news-article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card li {
+        width: 80%;
+        max-width: none;
+    }
+    .suggestion-image {
+        width: 100%;
+        max-width: 400px;
+    }
+    .suggestion-container {
+        text-align: left;
+        height: 500px;
+        margin-bottom: 60px;
+    }
+
+    .suggestion-form input[type="text"],
+    .suggestion-form textarea {
+        width: 100%;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px 0 10px;
+    }
+    .suggestion-form input[type="submit"] {
+        width: 60%;
+        padding: 10px 5px 10px;
+        background-color: #FFD700;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    footer {
+        background-color: #FFD700;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    footer p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .header-container {
+        width: 95%;
+        padding: 10px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        width: auto;
+    }
+    .banner-image {
+        height: 40vh;
+    }
+    .banner-form .form input[type="text"] {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .banner-form button {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .suggestion {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .suggestion-container {
+        margin-bottom: 20px;
+    }
+    .button {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
